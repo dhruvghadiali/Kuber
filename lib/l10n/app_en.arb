@@ -1,0 +1,4 @@
+{
+  "helloMessage": "Hello from KUBER Application",
+  "testMessage": "Test Message from {firstName} {lastName}"
+}
