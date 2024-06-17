@@ -39,6 +39,8 @@ dependencies:
     sdk: flutter
   intl: any
   get: ^4.6.6
+  http: ^1.2.1
+  flutter_dotenv: ^5.1.0
 
 dev_dependencies:
   flutter_test:
