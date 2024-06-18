@@ -3,9 +3,9 @@ import 'package:http/http.dart' as http;
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:kuber/helpers/app_enum.dart';
 import 'package:kuber/models/http/delete_request_model.dart';
-import 'package:kuber/models/http/demo_request_model.dart';
+import 'package:kuber/models/mock/mock_request_model.dart';
 import 'package:kuber/models/http/http_response_model.dart';
-import 'package:kuber/services/http/mock_request_service.dart';
+import 'package:kuber/services/mock/mock_request_service.dart';
 
 class DeleteRequestService {
   static Future<HttpResponseModel> deleteRequest(
@@ -31,8 +31,8 @@ class DeleteRequestService {
 
     if (Environment.demo.name == dotenv.env['ENVIRONMENT']) {
       return await MockRequestService.mockRequestService(
-        demoRequest:
-            deleteRequestModel.demoRequest ?? DemoRequestModel.defaultValues(),
+        mockRequest:
+            deleteRequestModel.mockRequest ?? MockRequestModel.defaultValues(),
       );
     } else {
       try {
