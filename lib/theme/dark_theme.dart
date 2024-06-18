@@ -20,6 +20,17 @@ class DarkTheme {
       error: colorEnglishRed,
       onError: colorEnglishRed,
     ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        backgroundColor: colorUranianBlue,
+        padding: const EdgeInsets.symmetric(vertical: 20),
+        elevation: 10,
+        shadowColor: colorUranianBlue,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+        ),
+      ),
+    ),
     textTheme: const TextTheme(
       bodyLarge: TextStyle(),
       bodyMedium: TextStyle(),
