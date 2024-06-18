@@ -1,13 +1,13 @@
-import 'package:kuber/models/http/demo_request_model.dart';
+import 'package:kuber/models/mock/mock_request_model.dart';
 
 class GetRequestModel {
   String endPoint;
   Map<String, String>? headers;
-  DemoRequestModel? demoRequest;
+  MockRequestModel? mockRequest;
 
   GetRequestModel({
     required this.endPoint,
     this.headers,
-    this.demoRequest,
+    this.mockRequest,
   });
 }

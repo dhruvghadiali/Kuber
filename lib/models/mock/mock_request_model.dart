@@ -1,13 +1,13 @@
-class DemoRequestModel {
+class MockRequestModel {
   String mockFilePath;
   int statusCode;
 
-  DemoRequestModel({
+  MockRequestModel({
     required this.mockFilePath,
     required this.statusCode,
   });
 
-  static DemoRequestModel defaultValues() => DemoRequestModel(
+  static MockRequestModel defaultValues() => MockRequestModel(
         mockFilePath: 'assets/mock_data/success.json',
         statusCode: 200,
       );
