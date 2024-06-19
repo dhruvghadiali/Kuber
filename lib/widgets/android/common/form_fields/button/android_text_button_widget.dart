@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class TextButtonWidget extends StatelessWidget {
-  const TextButtonWidget({
+class AndroidTextButtonWidget extends StatelessWidget {
+  const AndroidTextButtonWidget({
     super.key,
     required this.buttonText,
     required this.onPressed,
