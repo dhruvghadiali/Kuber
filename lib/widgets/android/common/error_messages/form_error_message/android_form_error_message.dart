@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class AndroidFormErrorMessage extends StatelessWidget {
-  const AndroidFormErrorMessage({
+class AndroidFormErrorMessageWidget extends StatelessWidget {
+  const AndroidFormErrorMessageWidget({
     super.key,
     required this.errorMessage,
   });

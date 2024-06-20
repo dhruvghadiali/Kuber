@@ -1,4 +1,6 @@
 {
+  "apiRequestProcessingTitle" : "Processing ...",
+  "apiRequestProcessingMessage" : "Please wait your request is processing",
   "helloMessage": "Hello from KUBER Application",
   "testMessage": "Test Message from {firstName} {lastName}"
 }

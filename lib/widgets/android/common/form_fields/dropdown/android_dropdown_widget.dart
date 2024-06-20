@@ -122,7 +122,7 @@ class AndroidDropdowWidget extends StatelessWidget {
           ),
         ),
         showError
-            ? AndroidFormErrorMessage(errorMessage: errorMessage ?? '')
+            ? AndroidFormErrorMessageWidget(errorMessage: errorMessage ?? '')
             : Container(),
       ],
     );
