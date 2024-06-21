@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:kuber/theme/app_palette.dart';
+import 'package:kuber/theme/extensions_theme_data.dart';
 
 class DarkTheme {
-  static Color colorPotBlack = const Color(0xFF161616); // background color
-  static Color colorUranianBlue = const Color(0xFFbbe1fa); // Foreground color 1
-  static Color colorWhiteSmoke = const Color(0xFFF4EEE0); // Foreground color 2
-  static Color colorEnglishRed = const Color(0xFFAE445A); // Error color
-  static Color colorBergamotOrange = const Color(0xFFF39F5A); // Warning color
-
   static ThemeData theme = ThemeData(
     useMaterial3: false,
     colorScheme: ColorScheme(
       brightness: Brightness.dark,
-      surface: colorPotBlack,
-      onSurface: colorPotBlack,
-      primary: colorPotBlack,
-      onPrimary: colorPotBlack,
-      secondary: colorWhiteSmoke,
-      onSecondary: colorWhiteSmoke,
-      error: colorEnglishRed,
-      onError: colorEnglishRed,
+      surface: DarkThemeColors.colorPotBlack,
+      onSurface: DarkThemeColors.colorPotBlack,
+      primary: DarkThemeColors.colorPotBlack,
+      onPrimary: DarkThemeColors.colorPotBlack,
+      secondary: DarkThemeColors.colorFloralWhite,
+      onSecondary: DarkThemeColors.colorFloralWhite,
+      error: DarkThemeColors.colorEnglishRed,
+      onError: DarkThemeColors.colorEnglishRed,
+    ),
+    textButtonTheme: TextButtonThemeData(
+      style: TextButton.styleFrom(
+        backgroundColor: DarkThemeColors.colorFloralWhite,
+        padding: const EdgeInsets.symmetric(vertical: 20),
+        shadowColor: DarkThemeColors.colorFloralWhite,
+        shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.all(Radius.circular(10)),
+        ),
+      ),
     ),
     textTheme: const TextTheme(
       bodyLarge: TextStyle(),
@@ -37,7 +43,16 @@ class DarkTheme {
       titleMedium: TextStyle(),
       titleSmall: TextStyle(),
     ).apply(
-      bodyColor: colorUranianBlue,
+      bodyColor: DarkThemeColors.colorFloralWhite,
     ),
+    extensions: [
+      ExtensionsThemeData(
+        primary: DarkThemeColors.colorPotBlack,
+        secondary: DarkThemeColors.colorFloralWhite,
+        accent: DarkThemeColors.colorUranianBlue,
+        error: DarkThemeColors.colorEnglishRed,
+        warning: DarkThemeColors.colorBergamotOrange,
+      ),
+    ],
   );
 }
