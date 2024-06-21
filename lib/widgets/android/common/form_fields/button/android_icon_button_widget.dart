@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kuber/helpers/app_key.dart';
 
 class AndroidIconButtonWidget extends StatelessWidget {
   const AndroidIconButtonWidget({
@@ -22,12 +23,15 @@ class AndroidIconButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color:  backgroundColor ?? Theme.of(context).colorScheme.primary,
+      key: Key(materialForAndroidIconButtonWidget),
+      color: backgroundColor ?? Theme.of(context).colorScheme.primary,
       child: IconButton(
+        key: Key(iconButtonForAndroidIconButtonWidget),
         onPressed: () => onPressed(),
         splashColor: iconColor ?? Theme.of(context).colorScheme.secondary,
         tooltip: tooltip,
         icon: Icon(
+          key: Key(iconForAndroidIconButtonWidget),
           icon,
           color: iconColor ?? Theme.of(context).colorScheme.secondary,
           size: iconSize,

@@ -4,6 +4,7 @@
         "datepicker",
         "dotenv",
         "Dropdow",
-        "KUBER"
+        "KUBER",
+        "loder"
     ]
 }
