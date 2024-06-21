@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kuber/helpers/app_key.dart';
 
 class AndroidTextButtonWidget extends StatelessWidget {
   const AndroidTextButtonWidget({
@@ -18,6 +19,7 @@ class AndroidTextButtonWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextButton(
+      key: Key(textButtonForAndroidTextButtonWidget),
       onPressed: () => onPressed(),
       style: TextButton.styleFrom(
         backgroundColor:
@@ -25,6 +27,7 @@ class AndroidTextButtonWidget extends StatelessWidget {
         shadowColor: backgroundColor ?? Theme.of(context).colorScheme.secondary,
       ),
       child: Text(
+        key: Key(textForAndroidTextButtonWidget),
         buttonText,
         style: Theme.of(context).textTheme.titleMedium!.copyWith(
               color: textColor ?? Theme.of(context).colorScheme.primary,

@@ -6,3 +6,5 @@ String columnForAndroidApiRequestLoaderWidget = 'column';
 String materialForAndroidIconButtonWidget = 'material';
 String iconButtonForAndroidIconButtonWidget = 'icon-button';
 String iconForAndroidIconButtonWidget = 'icon';
+String textButtonForAndroidTextButtonWidget = 'text-button';
+String textForAndroidTextButtonWidget = 'text';
